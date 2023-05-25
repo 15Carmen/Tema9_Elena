@@ -6,7 +6,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.TreeMap;
 import java.util.TreeSet;
 
 public class FicheroProducto {
@@ -30,7 +29,7 @@ public class FicheroProducto {
         BufferedReader br = null;
         try {
             //Inicializamos el objeto BufferedReader con el fichero productos.txt
-            br = new BufferedReader(new FileReader("src/producto/productos.txt"));
+            br = new BufferedReader(new FileReader("Persona/producto/productos.txt"));
             //Leemos la primera línea del fichero
             String linea = br.readLine();
 
@@ -86,7 +85,7 @@ public class FicheroProducto {
         BufferedWriter bw = null;
         try {
             //Inicializamos el objeto BufferedWriter con el fichero productos.txt
-            bw = new BufferedWriter(new FileWriter("src/producto/productos.txt"));
+            bw = new BufferedWriter(new FileWriter("Persona/producto/productos.txt"));
 
             //Recorremos el TreeSet con los productos que queremos escribir en el fichero
             for(Producto p : productosEscritos) {
